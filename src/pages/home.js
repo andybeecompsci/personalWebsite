@@ -35,7 +35,7 @@ export default function Home() {
                     <div style={{ flex: 2 }}>
                         <p style={{ height: 750, width: 1250, marginTop: "140px", marginRight: '10px', marginLeft: '200px' }}> PROJECTS! CHOOSE A PROJECT
                             ____________________________________________________
-                            LEARN HOW TO MAKE THESE CONTAINERS VERTICALLY SEPERATE, ADD INDIVIDUAL PROJECT DESCRIPTIONS LIKE MICHELLE LIU'S WEBSITE </p>
+                            LEARN HOW TO MAKE THESE CONTAINERS VERTICALLY SEPERATE, ADD INDIVIDUAL PROJECT DESCRIPTIONS LIKE EXAMPLE WEBSITE</p>
                         
                     </div>
 
