@@ -3,6 +3,7 @@ import React from "react";
 import { Navbar, NavbarBrand, NavItem, NavLink, Nav } from "reactstrap";
 import App from "../App";
 import { Link, useNavigate } from 'react-router-dom';
+import { color } from "chart.js/helpers";
 
 
 export default function NavBarTest() {
@@ -21,29 +22,25 @@ export default function NavBarTest() {
   };
 
   return (
-    <Navbar style={{ backgroundColor: '#000000', color: '#000000', fontSize: '25px', textAlign: 'center'}}>
-      <NavbarBrand classname="d-flex" style={{ color: '#FFFFFF', fontSize: '30px' }}>
+    <Navbar classname="navbar">
+      <NavbarBrand className="navbar-brand">
         <div className="d-flex align-items-center">
-          <img alt='Fuji Icon' src='/solaire_icon.png' style={{ height: 100, width: 100, marginright: '10px' }}></img>
+          <img alt="Solaire" src="/images/solaire_icon.png" className="navbar-img" />
           <div>
-            <NavLink href="/home">andersonBee</NavLink>
+            <NavLink href="/home" className="navbar-link name-link">andersonBee</NavLink>
           </div>
         </div>
       </NavbarBrand>
-      <Nav className="ml-auto" navbar>
+      <Nav className="ml-auto navbar">
         <NavItem className="d-flex">
-          <NavLink href="/home" style={{ color: '#BA480A', marginRight: '50px' }}>my work</NavLink>
-          <NavLink href="/personal" style={{ color: '#BA480A', marginRight: '50px' }}>personal</NavLink>
-          <NavLink href="/AndersonBee__Resume.pdf" style={{ color: '#BA480A', marginRight: '50px' }} target="_blank" rel="noopener noreferrer" >resumé</NavLink>
+          <NavLink href="/home" className="navbar-link">my work</NavLink>
+          <NavLink href="/personal" className="navbar-link">personal</NavLink>
+          <NavLink href="/AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
           {userAuth_logout && (
-            <button
-              className="btn"
-              onClick={user_Logout}
-              style={{ color: '#BA480A', marginRight: '50px', fontSize: 'inherit', fontFamily: 'inherit', fontWeight: 'inherit' }}
-            >
-              LOGOUT
-            </button>
-          )}
+          <button className="logout-button" onClick={user_Logout}>
+            LOGOUT
+          </button>
+        )}
         </NavItem>
       </Nav>
     </Navbar>

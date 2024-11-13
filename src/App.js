@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Home from './pages/home';
+//css
+import './/components/style.css'
 
 //comps
 import NavBarTest from './components/PrettyComps';

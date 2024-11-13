@@ -1,0 +1,48 @@
+/* STYLING */
+
+
+/* navbar */
+.navbar {
+    background-color: #000000;
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-link {
+    color: #BA480A !important;
+    font-size: 32px !important;
+}
+
+.name-link {
+    color: #FFFFFF !important;
+    font-size: 32px !important;
+}
+
+.navbar-img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.logout-button {
+    color: #BA480A;
+    margin-right: 50px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+/* main */
+
