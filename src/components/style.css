@@ -44,5 +44,93 @@
     font-weight: inherit;
 }
 
-/* main */
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1B1818;
+    color: white;
+}
 
+/* Main Container: Two Columns */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Use Flexbox for horizontal layout */
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+/* Left Side: Welcome Section */
+.left-side {
+    flex: 1.25;
+    min-width: 300px;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Welcome Section Specific */
+.welcome-section {
+    text-align: center;
+    max-width: 400px;
+    /* Limit text width */
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.welcome-links{
+    display: flex;
+        /* Use Flexbox for alignment */
+        flex-direction: row;
+        /* Stack links vertically */
+        align-items: center;
+        /* Center links horizontally */
+        gap: 5%;
+        /* Adds spacing between the links */
+        padding-top: 5%;
+        
+}
+
+.welcome-links a {
+    color: white;
+    padding: 8px 16px;
+}
+
+/* Right Side: Projects */
+.right-side {
+    flex: 2;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1818;
+}
+
+.projects-section {
+    flex: 0.1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.projects-details {
+    flex: 1;
+        /* Equal height for both sections */
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        /* Add a separator between the two right sections */
+}
