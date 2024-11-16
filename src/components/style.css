@@ -87,6 +87,7 @@ body {
 .welcome-section {
     text-align: center;
     max-width: 400px;
+    padding-top: 5%;
     /* Limit text width */
 }
 
