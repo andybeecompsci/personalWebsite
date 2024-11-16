@@ -63,33 +63,33 @@ export default function Home() {
                         </p>
 
                         <div className="welcome-links">
-                      
-                            <a href="mailto:andersonjbee@gmail.com">email</a>
-                            <a href="https://github.com/andybeecompsci">github</a>
-                            <a href="www.linkedin.com/in/anderson-bee-b9a711299">linkedin</a>
-                            <a href="https://open.spotify.com/user/y74axlou6bkr879jlvxsyptdt?si=af1ff70ecb36432b">spotify</a>
-                   
+                            <a href="mailto:andersonjbee@gmail.com" target="_blank" rel="noopener noreferrer">email</a>
+                            <a href="https://github.com/andybeecompsci" target="_blank" rel="noopener noreferrer">github</a>
+                            <a href="https://www.linkedin.com/in/anderson-be3" target="_blank" rel="noopener noreferrer">linkedin</a>
+                            <a href="https://open.spotify.com/user/y74axlou6bkr879jlvxsyptdt?si=af1ff70ecb36432b" target="_blank" rel="noopener noreferrer">spotify</a>
                         </div>
-
-                        
                     </section>
-                    
-                    {/* <section className="welcome-links">
-                        <a href="mailto:andersonjbee@gmail.com">email</a>
-                        <a href="https://github.com/andybeecompsci">github</a>
-                        <a href="www.linkedin.com/in/anderson-bee-b9a711299">linkedin</a>
-                        <a href="https://open.spotify.com/user/y74axlou6bkr879jlvxsyptdt?si=af1ff70ecb36432b">spotify</a>
-                    </section> */}
                 </div>
 
                 {/* Right Side: Projects */}
-                <div className="right-side">
-                    <section className="projects-section">
-                        <h2>Projects! Choose a project</h2>
+                <div className="right-side"> 
+                    
+                    <section className="projects">
+                        <h2>Selected Work</h2>
                     </section>
-                    <section className="projects-details">
-                        <p>Additional project details or descriptions can go here!</p>
+
+                    <section className="proj_selection">
+                        <p>choose projects, updates section below, make these links</p>
                     </section>
+
+                    <section className="proj_details">
+                        <img alt="Solaire" src="/images/solaire_icon.png" className="proj_img" />
+                    </section>
+
+                    <section className="proj_details">
+                        <p>make this section reactive. loads content based off what is clicked on above</p>
+                    </section>
+                    
                 </div>
             </div>
 

@@ -14,12 +14,7 @@ export default function NavBarTest() {
   const userAuth_logout = localStorage.getItem('token');
 
 
-  const user_Logout = () => {
-    // clear token
-    localStorage.removeItem('token');
-    // redirct to home 
-    navigate('/home');
-  };
+  
 
   return (
     <Navbar classname="navbar">
@@ -36,11 +31,7 @@ export default function NavBarTest() {
           <NavLink href="/home" className="navbar-link">my work</NavLink>
           <NavLink href="/personal" className="navbar-link">personal</NavLink>
           <NavLink href="/AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
-          {userAuth_logout && (
-          <button className="logout-button" onClick={user_Logout}>
-            LOGOUT
-          </button>
-        )}
+          
         </NavItem>
       </Nav>
     </Navbar>
