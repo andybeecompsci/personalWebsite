@@ -22,15 +22,15 @@ export default function NavBarTest() {
         <div className="d-flex align-items-center">
           <img alt="Solaire" src="/images/solaire_icon.png" className="navbar-img" />
           <div>
-            <NavLink href="/home" className="navbar-link name-link">andersonBee</NavLink>
+            <NavLink href="personalWebsite/#home" className="navbar-link name-link">andersonBee</NavLink>
           </div>
         </div>
       </NavbarBrand>
       <Nav>
         <NavItem className="d-flex">
-          <NavLink href="/home" className="navbar-link">my work</NavLink>
-          <NavLink href="/personal" className="navbar-link">personal</NavLink>
-          <NavLink href="/AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
+          <NavLink href="personalWebsite/#home" className="navbar-link">my work</NavLink>
+          <NavLink href="personalWebsite/#personal" className="navbar-link">personal</NavLink>
+          <NavLink href="personalWebsite/#AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
           
         </NavItem>
       </Nav>
