@@ -20,7 +20,8 @@ export default function NavBarTest() {
     <Navbar classname="navbar">
       <NavbarBrand className="navbar-brand">
         <div className="d-flex align-items-center">
-          <img alt="Solaire" src="/images/solaire_icon.png" className="navbar-img" />
+          <img alt="Solaire" src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`} className="navbar-img" />
+
           <div>
             <NavLink href="personalWebsite/#home" className="navbar-link name-link">andersonBee</NavLink>
           </div>
