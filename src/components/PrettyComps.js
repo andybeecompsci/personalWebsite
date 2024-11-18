@@ -29,9 +29,9 @@ export default function NavBarTest() {
       </NavbarBrand>
       <Nav>
         <NavItem className="d-flex">
-          <NavLink href="personalWebsite/#home" className="navbar-link">my work</NavLink>
-          <NavLink href="personalWebsite/#personal" className="navbar-link">personal</NavLink>
-          <NavLink href="personalWebsite/#AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
+          <NavLink href="/#home" className="navbar-link">my work</NavLink>
+          <NavLink href="/#personal" className="navbar-link">personal</NavLink>
+          <NavLink href="/#AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
           
         </NavItem>
       </Nav>
