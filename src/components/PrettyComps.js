@@ -26,7 +26,7 @@ export default function NavBarTest() {
           </div>
         </div>
       </NavbarBrand>
-      <Nav className="ml-auto navbar">
+      <Nav>
         <NavItem className="d-flex">
           <NavLink href="/home" className="navbar-link">my work</NavLink>
           <NavLink href="/personal" className="navbar-link">personal</NavLink>
