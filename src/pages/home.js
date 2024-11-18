@@ -19,6 +19,8 @@ export default function Home() {
         { id:1, name: "Project 1", desciption: "this is project 1"},
         { id: 2, name: "Project 2", desciption: "this is project 2" },
         { id: 3, name: "Project 3", desciption: "this is project 3" },
+        { id: 4, name: "Project 3", desciption: "this is project 3" },
+        
     ];
     
 
@@ -28,15 +30,14 @@ export default function Home() {
             <NavBarTest />
            
             <div className="main-container">
-                {/* Left Side: Welcome */}
+                {/* left side (welcome and info)*/}
                 <div className="left-side">
                     <section className="welcome-section">
                         <h1>welcome!</h1>
-                        <p>
-                            I'm currently a student at QUT, studying IT, Majoring in Computer
-                            Science, and Minoring in Network Security and Business Enterprise
-                            Systems
+                        <p className="welcome_bio">
+                            I'm a software developer, passionate about creating things that people want, and things that work :)
                         </p>
+                        <p className="degree">Currently studying IT / Computer Science / Network & Security / Enterprise Systems @ QUT</p>
 
                         <div className="welcome-links">
                             <a href="mailto:andersonjbee@gmail.com" target="_blank" rel="noopener noreferrer">email</a>
@@ -47,29 +48,30 @@ export default function Home() {
                     </section>
                 </div>
 
-                {/* Right Side: Projects */}
+                {/* right side (projects) */}
                 <div className="right-side"> 
                     
                     <section className="projects">
-                        <h2>Selected Work</h2>
+                        <h2 className="proj_selecion_title">SELECTED WORK</h2>
                     </section>
                     {/* select project */}
                     <section className="proj_selection">
                         {projects.map((project) =>(
                             <button
                             key={project.id}
-                            className="proj_button"
+                                className={`proj_button ${selectedProject?.id === project.id ? "active" : ""}`} //adds style to buttons
                             onClick={() => setSelectedProject(project)}
                             >
                                 {project.name}
                             </button>
                         ))}
                     </section>
-
+                    
+                    {/* project shown */}
                     <section className="proj_details">
                         {selectedProject ? (
                             <div>
-                                <h2>{selectedProject.name}</h2>
+                                <h2>{selectedProject.name}</h2> 
                                 <p>{selectedProject.desciption}</p>
                             </div>
                         ) : (
@@ -77,8 +79,7 @@ export default function Home() {
                         )}
                     </section>
 
-                    <section className="proj_details">
-                    </section>
+                    
                     
                 </div>
             </div>
