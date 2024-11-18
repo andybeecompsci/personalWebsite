@@ -33,8 +33,8 @@ export default function Personal() {
                 <div className="left-side">
                     <section className="welcome-section">
                         <p> headshot or something </p>
-                        
                     </section>
+                    <p>coming soon </p>
                 </div>
 
                 {/* right side (about me ) */}
@@ -42,6 +42,7 @@ export default function Personal() {
                     <section className="about_me">
                         <h2 className="proj_selection_title">about me x</h2>
                     </section>
+                    <p>coming soon </p>
                 </div>
             </div>
 

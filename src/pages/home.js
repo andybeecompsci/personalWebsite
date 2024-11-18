@@ -16,10 +16,10 @@ export default function Home() {
 
     //projects to be selected
     const projects = [
-        { id:1, name: "Project 1", desciption: "this is project 1"},
-        { id: 2, name: "Project 2", desciption: "this is project 2" },
-        { id: 3, name: "Project 3", desciption: "this is project 3" },
-        { id: 4, name: "Project 4", desciption: "this is project 4" },
+        { id:1, name: "Project 1", desciption: "coming soon x"},
+        { id: 2, name: "Project 2", desciption: "coming soon x" },
+        { id: 3, name: "Project 3", desciption: "coming soon x" },
+        { id: 4, name: "Project 4", desciption: "coming soon x" },
         
     ];
     
