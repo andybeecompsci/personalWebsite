@@ -23,15 +23,15 @@ export default function NavBarTest() {
           <img alt="Solaire" src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`} className="navbar-img" />
 
           <div>
-            <NavLink href="/#home" className="navbar-link name-link">andersonBee</NavLink>
+            <NavLink to="/home" className="navbar-link name-link">andersonBee</NavLink>
           </div>
         </div>
       </NavbarBrand>
       <Nav>
         <NavItem className="d-flex">
-          <NavLink href="/#home" className="navbar-link">my work</NavLink>
-          <NavLink href="/#personal" className="navbar-link">personal</NavLink>
-          <NavLink href="/#AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
+          <NavLink to="/home" className="navbar-link">my work</NavLink>
+          <NavLink to="/personal" className="navbar-link">personal</NavLink>
+          <NavLink to="/AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
           
         </NavItem>
       </Nav>
