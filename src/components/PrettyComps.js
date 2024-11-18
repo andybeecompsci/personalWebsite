@@ -23,7 +23,7 @@ export default function NavBarTest() {
           <img alt="Solaire" src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`} className="navbar-img" />
 
           <div>
-            <NavLink href="personalWebsite/#home" className="navbar-link name-link">andersonBee</NavLink>
+            <NavLink href="/#home" className="navbar-link name-link">andersonBee</NavLink>
           </div>
         </div>
       </NavbarBrand>
