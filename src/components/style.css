@@ -166,7 +166,7 @@ body {
             padding-bottom: 1%;
 }
 
-.proj_selecion_title{
+.proj_selection_title{
         font-weight: bold;
 }
 
@@ -211,4 +211,23 @@ body {
     width: 150px;
     height: auto;
     
+}
+
+
+
+/* personal */
+
+/* project section layout */
+.about_me {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.about_me_title {
+    font-weight: bold;
 }

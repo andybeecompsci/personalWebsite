@@ -19,7 +19,7 @@ export default function Home() {
         { id:1, name: "Project 1", desciption: "this is project 1"},
         { id: 2, name: "Project 2", desciption: "this is project 2" },
         { id: 3, name: "Project 3", desciption: "this is project 3" },
-        { id: 4, name: "Project 3", desciption: "this is project 3" },
+        { id: 4, name: "Project 4", desciption: "this is project 4" },
         
     ];
     
@@ -75,7 +75,7 @@ export default function Home() {
                                 <p>{selectedProject.desciption}</p>
                             </div>
                         ) : (
-                            <p> select a project</p>
+                            <p> select a project :)</p>
                         )}
                     </section>
 
