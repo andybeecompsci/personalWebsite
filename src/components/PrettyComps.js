@@ -18,7 +18,7 @@ export default function NavBarTest() {
   
 
   return (
-    <Navbar classname="navbar">
+    <Navbar className="navbar">
       <NavbarBrand className="navbar-brand">
         <div className="d-flex align-items-center">
           <img alt="Solaire" src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`} className="navbar-img" />
@@ -29,14 +29,22 @@ export default function NavBarTest() {
         </div>
       </NavbarBrand>
       <Nav>
-        <NavItem className="d-flex">
+        
           <NavLink to="/home" className="navbar-link">my work</NavLink>
           <NavLink to="/personal" className="navbar-link">personal</NavLink>
-          <NavLink to="/AndersonBee_Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
+        <a
+          href="/AndersonBee_Resume.pdf"
+          className="navbar-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resumé
+        </a>
+
 
 
           
-        </NavItem>
+        
       </Nav>
     </Navbar>
   );
