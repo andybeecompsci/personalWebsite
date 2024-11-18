@@ -29,6 +29,8 @@
     color: #BA480A !important;
     font-size: 32px !important;
     cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
     
 }
 .name-link {
@@ -89,7 +91,7 @@ body {
 }
 
 .welcome-section h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     
 }
 
