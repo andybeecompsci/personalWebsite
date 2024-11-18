@@ -30,8 +30,9 @@ export default function NavBarTest() {
       <Nav>
         <NavItem className="d-flex">
           <NavLink to="/home" className="navbar-link">my work</NavLink>
-          <NavLink to="/personal" className="navbar-link">personal</NavLink>
-          <NavLink to="/AndersonBee__Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
+<NavLink to="/personal" className="navbar-link">personal</NavLink>
+<NavLink to="/AndersonBee_Resume.pdf" className="navbar-link" target="_blank" rel="noopener noreferrer">resumé</NavLink>
+
           
         </NavItem>
       </Nav>

@@ -13,15 +13,13 @@ import Home from './pages/home';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //route to individual pages
 root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<App />} />
-        <Route path="/personal" element={<Personal />} />
-      </Routes>
-    </HashRouter>
-  </React.StrictMode>
+  <HashRouter>
+    <Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<App />} />
+      <Route path="/personal" element={<Personal />} />
+    </Routes>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

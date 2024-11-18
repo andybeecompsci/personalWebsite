@@ -28,6 +28,7 @@
 .navbar-link {
     color: #BA480A !important;
     font-size: 32px !important;
+    cursor: pointer;
     
 }
 .name-link {
