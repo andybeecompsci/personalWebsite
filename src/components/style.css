@@ -347,6 +347,17 @@ body {
     max-width: 100%;
     }
 
+        /* degree  */
+        .degree {
+            text-align: center;
+            font-style: italic;
+            line-height: 1.6;
+            margin: 10px 0;
+            word-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
+        }
+
     /* Ensure body scrolls if content exceeds viewport */
     body {
     overflow-y: auto;
