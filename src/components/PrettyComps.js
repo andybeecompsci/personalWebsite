@@ -33,13 +33,14 @@ export default function NavBarTest() {
           <NavLink to="/home" className="navbar-link">my work</NavLink>
           <NavLink to="/personal" className="navbar-link">personal</NavLink>
         <a
-          href="/AndersonBee_Resume.pdf"
+          href={`${process.env.PUBLIC_URL}/AndersonBee__Resume.pdf`}
           className="navbar-link"
           target="_blank"
           rel="noopener noreferrer"
         >
           resumé
         </a>
+       
 
 
 
