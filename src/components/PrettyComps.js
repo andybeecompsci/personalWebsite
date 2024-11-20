@@ -17,21 +17,67 @@ export default function NavBarTest() {
 
   
 
+  // return (
+  //   <Navbar className="navbar">
+  //     <NavbarBrand className="navbar-brand">
+  //       <div className="d-flex align-items-center">
+  //         <img alt="Solaire" src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`} className="navbar-img" />
+
+  //         <div>
+  //           <NavLink to="/home" className="navbar-link name-link">andersonBee</NavLink>
+  //         </div>
+  //       </div>
+  //     </NavbarBrand>
+  //     <Nav>
+        
+  //         <NavLink to="/home" className="navbar-link">my work</NavLink>
+  //         <NavLink to="/personal" className="navbar-link">personal</NavLink>
+  //       <a
+  //         href={`${process.env.PUBLIC_URL}/AndersonBee__Resume.pdf`}
+  //         className="navbar-link"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         resumé
+  //       </a>
+       
+
+
+
+          
+        
+  //     </Nav>
+  //   </Navbar>
+  // );
+
+
+
   return (
     <Navbar className="navbar">
+      {/* Brand Section */}
       <NavbarBrand className="navbar-brand">
         <div className="d-flex align-items-center">
-          <img alt="Solaire" src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`} className="navbar-img" />
-
+          <img
+            alt="Solaire"
+            src={`${process.env.PUBLIC_URL}/images/solaire_icon.png`}
+            className="navbar-img"
+          />
           <div>
-            <NavLink to="/home" className="navbar-link name-link">andersonBee</NavLink>
+            <NavLink to="/home" className="navbar-link name-link">
+              andersonBee
+            </NavLink>
           </div>
         </div>
       </NavbarBrand>
-      <Nav>
-        
-          <NavLink to="/home" className="navbar-link">my work</NavLink>
-          <NavLink to="/personal" className="navbar-link">personal</NavLink>
+
+      {/* Links Section */}
+      <div className="navbar-links">
+        <NavLink to="/home" className="navbar-link">
+          my work
+        </NavLink>
+        <NavLink to="/personal" className="navbar-link">
+          personal
+        </NavLink>
         <a
           href={`${process.env.PUBLIC_URL}/AndersonBee__Resume.pdf`}
           className="navbar-link"
@@ -40,13 +86,7 @@ export default function NavBarTest() {
         >
           resumé
         </a>
-       
-
-
-
-          
-        
-      </Nav>
+      </div>
     </Navbar>
   );
 }

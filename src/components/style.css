@@ -22,7 +22,7 @@
 }
 .navbar-link {
     color: #BA480A !important;
-    font-size: 32px !important;
+    font-size: 32px;
     cursor: pointer;
     text-decoration: none;
     margin-right: 20px;
@@ -242,49 +242,215 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* other media  */
 
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column;
-        /* stack vertically */
+    flex-direction: column;
+    /* Stack vertically */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    min-height: 100vh;
+    /* Ensure it occupies full viewport height */
     }
 
     .right-side {
-        margin-top: 20px;
-        /* Add spacing between sections */
-        margin-left: 0;
-        /* Remove left margin */
-        margin-right: 0;
-        /* Remove right margin */
-        border-right: none;
-        /* Remove border on smaller screens */
+    margin-top: 20px;
+    /* Add spacing between sections */
+    margin-left: 0;
+    /* Remove left margin */
+    margin-right: 0;
+    /* Remove right margin */
+    border-right: none;
+    /* Remove border on smaller screens */
+    padding: 0 5%;
+    /* Add padding for consistency */
+    width: 100%;
+    /* Take full width */
+    box-sizing: border-box;
+    /* Include padding in width */
     }
 
     .left-side {
-        border-right: none;
-        /* Remove border on smaller screens */
-        padding-left: 5%;
-        /* Adjust padding for smaller screens */
+    border-right: none;
+    /* Remove border on smaller screens */
+    padding-left: 5%;
+    /* Adjust padding for smaller screens */
+    padding-right: 5%;
+    /* Add right padding for consistency */
+    width: 100%;
+    /* Take full width */
+    box-sizing: border-box;
+    /* Include padding in width */
     }
 
-        .welcome-links {
-            display: flex;
-            flex-wrap: wrap;
-           
-            align-items: center;
-            gap: 10px;
-     
-            justify-content: center;
-         
-            padding-top: 0.5%;
-            padding-left: 5%;
-            
-            max-width: 100%;
-           
-            overflow: hidden;
-           
-            box-sizing: border-box;
-           
-        }
+    .welcome-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow links to wrap */
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    /* Center align links */
+    padding-top: 0.5%;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    }
+
+    .welcome-section {
+    width: auto;
+    max-width: none;
+    padding-top: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+    }
+
+    .welcome-section h1 {
+    font-size: 2.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    }
+
+    /* text about me  */
+    .welcome_bio {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    word-wrap: break-word;
+    max-width: 100%;
+    }
+
+    /* Ensure body scrolls if content exceeds viewport */
+    body {
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    }
+
+
+
+    .navbar {
+    flex-wrap: wrap;
+    /* Allow wrapping of elements */
+    align-items: flex-start
+    /* Align brand at the top */
+    }
+    .navbar-brand {
+    font-size: 24px;
+    /* Reduce brand font size */
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-left: 12.5%;
+    /* Add space below the brand */
+    }
+
+    .navbar-links {
+    flex-direction: column;
+    /* Stack links vertically */
+    align-items: flex-end;
+    /* Align links to the right */
+    width: 100%;
+    gap: 5px;
+    /* Adjust spacing between links */
+
+    /* Add spacing from the brand */
+    }
+    .navbar-link {
+    font-size: 22px;
+    /* Reduce link size */
+    }
+    .navbar-img {
+    height: 60px;
+    /* Smaller logo size for space management */
+    width: 60px;
+    margin-right: 10px;
+    }
+
+    .navbar>.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    /* Align links to the right */
+    }
+
+
+
+
+    /* Adjust project section layout */
+    .projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 10px;
+    /* Add spacing between items */
+    text-align: center;
+    margin-bottom: 20px;
+    /* Add spacing below */
+    }
+
+    .proj_selection {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 15px;
+    /* Add spacing between items */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* Add spacing below */
+    }
+
+    .proj_button {
+    font-size: 120%;
+    /* Adjust font size for smaller screens */
+    margin: 5px;
+    /* Add spacing around each button */
+    white-space: nowrap;
+    /* Prevent text from breaking in buttons */
+    }
+
+    .proj_details {
+    text-align: center;
+    /* Keep details centered */
+    margin-top: 10px;
+    /* Add spacing between details and selection */
+    }
+
+    .proj_img {
+    width: 120px;
+    /* Adjust image size */
+    margin: 0 auto;
+    /* Center the image */
+    }
 }
