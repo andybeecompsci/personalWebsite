@@ -10,14 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     border-bottom: 1px solid #333;
-    
     margin-left: 1.5%;
-        /* Adjust left margin */
-        margin-right: 1.5%;
-        /* Adjust right margin */
-    
+    margin-right: 1.5%;
 }
 .navbar-brand {
     color: #FFFFFF;
@@ -44,6 +39,8 @@
     margin-right: 10px;
     
 }
+
+
 
 
 
@@ -119,9 +116,13 @@ body {
 /* social links  */
 .welcome-links{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    
     align-items: center;
-    gap: 5%;
+    gap: 3%;
+    max-width: 100%;
+    overflow: hidden;
     padding-top: 0.5%;
     padding-left: 15%;
         
@@ -130,6 +131,8 @@ body {
 .welcome-links a {
     color: white;
     padding: 8px 16px;
+    white-space: nowrap;
+    
 }
 
 /* right side of screen, projects */
@@ -142,6 +145,7 @@ body {
     background-color: #1B1818;
     margin-left: 2%;
     margin-right: 2.98%
+
 }
 
 
@@ -235,4 +239,52 @@ body {
 
 .about_me_title {
     font-weight: bold;
+}
+
+
+/* other media  */
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        /* stack vertically */
+    }
+
+    .right-side {
+        margin-top: 20px;
+        /* Add spacing between sections */
+        margin-left: 0;
+        /* Remove left margin */
+        margin-right: 0;
+        /* Remove right margin */
+        border-right: none;
+        /* Remove border on smaller screens */
+    }
+
+    .left-side {
+        border-right: none;
+        /* Remove border on smaller screens */
+        padding-left: 5%;
+        /* Adjust padding for smaller screens */
+    }
+
+        .welcome-links {
+            display: flex;
+            flex-wrap: wrap;
+           
+            align-items: center;
+            gap: 10px;
+     
+            justify-content: center;
+         
+            padding-top: 0.5%;
+            padding-left: 5%;
+            
+            max-width: 100%;
+           
+            overflow: hidden;
+           
+            box-sizing: border-box;
+           
+        }
 }
